@@ -1,0 +1,5 @@
+python train_ssl.py --unlabel_path E:\box_volume_agmentation/ --teacher_epochs 500 --update_teacher_epochs 500 --weights yolov5s.pt --data E:\box_volume_datasets/data.yaml --epochs 500 --total_epochs 100 --early_stop 100 --device 0 --workers 0
+
+# 학생부터 시작할때 추가
+--start student --predata E:/teacher_pseudo_label/data.yaml
+
